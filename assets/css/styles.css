@@ -401,3 +401,37 @@ h3 {
         gap: 40px;
     }
 }
+
+
+/*section-four*/
+
+
+.container-four {
+    display: flex;
+    justify-content: center;
+}
+
+.section-four h2 {
+    padding-bottom: 15px;
+}
+.section-four {
+    background-color: var(--light-gray-color);
+    padding-inline: 20px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.section-four h2 span {
+    color: var(--black-color);
+}
+
+.section-four img {
+    max-width: 50%;
+}
+
+@media (max-width: 768px) {
+    .section-four {
+        padding-bottom: 20px
+    }
+}

@@ -3,10 +3,6 @@ function toggleMenu() {
     navLinks.classList.toggle('show');
 }
 
-
-
-
-
 function activeInScrollElement() {
     document.querySelectorAll('.slide-right, .slide-left').forEach((el) => {
         if (el.getBoundingClientRect().top < window.innerHeight - 100) {
