@@ -450,4 +450,8 @@ h3 {
     .section-four img {
         max-width: 100%;
     }
+    .section-five {
+        display: flex;
+        flex-direction: column;
+    }
 }
