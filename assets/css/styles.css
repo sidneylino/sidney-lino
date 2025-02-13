@@ -127,7 +127,7 @@ h3 {
         height: 250px;
         gap: 35px;
         align-items: start;
-        padding-left: 10px;
+        padding-inline: 25px;
         border-radius: 20px;
         box-shadow: 0.5px 0.5px 4px 0px var(--black-color);
         opacity: 1;
