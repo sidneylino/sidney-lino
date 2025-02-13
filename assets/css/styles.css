@@ -10,10 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    padding-top: 20px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -90,8 +86,6 @@ h3 {
     height: 25px;
 }
 
-
-
 .nav-toggler {
     display: none;
     font-size: 40px;
@@ -105,7 +99,21 @@ h3 {
     }
 
     .nav-links {
-        display: none;
+        display: flex;
+        left: auto;
+        right: 30px;
+        top: 30px;
+        position: fixed;
+        flex-direction: column;
+        width: 120px;
+        height: 250px;
+        gap: 35px;
+        align-items: start;
+        padding-left: 30px;
+        border-radius: 20px;
+        box-shadow: 0.5px 0.5px 4px 0px var(--black-color);
+        opacity: 0;
+        transform: scale(0.5);
     }
 
     .nav-links.show {
@@ -122,6 +130,8 @@ h3 {
         padding-left: 30px;
         border-radius: 20px;
         box-shadow: 0.5px 0.5px 4px 0px var(--black-color);
+        opacity: 1;
+        transform: scale(1);
 
     }
 
@@ -249,7 +259,7 @@ h3 {
     bottom: -70px;
     left: 350px;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     width: 200px;
     height: 200px;
 }
@@ -258,7 +268,7 @@ h3 {
     bottom: -80px;
     left: 190px;
     position: absolute;
-    z-index: -1;
+    z-index: 0;
     width: 100px;
     height: 100px;
 }
@@ -269,7 +279,14 @@ h3 {
 
 }
 
+.container-one {
+    background-image: url(/assets/img/background-white.jpg);
+}
+
 @media (max-width: 768px) {
+    .container-one {
+        background-size:cover;
+    }
 
     .geometry {
         bottom: 170px;
