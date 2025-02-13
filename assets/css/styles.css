@@ -317,7 +317,7 @@ h3 {
 }
 
 .container-one {
-    background-image: url(/assets/img/background-white.jpg);
+    background-image: url(./assets/img/background-white.jpg);
 }
 
 @media (max-width: 768px) {
