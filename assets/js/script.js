@@ -15,4 +15,9 @@ function activeInScrollElement() {
 
 window.addEventListener('scroll', activeInScrollElement);
 
+document.querySelector('.scale-zoom').classList.add('active');
+
+document.querySelectorAll('.slide-bottom-start, .slide-right-start, .slide-left-start').forEach(el => {
+    el.classList.add('finish');
+});
 
