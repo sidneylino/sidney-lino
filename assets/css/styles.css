@@ -199,7 +199,7 @@ h3 {
 .scale-zoom {
     transform: scale(0);
     opacity: 0;
-    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .scale-zoom.active {
@@ -210,31 +210,31 @@ h3 {
 .slide-right-start {
     transform: translateX(50px);
     opacity: 0;
-    transition: transform 2s ease, opacity 1s ease; 
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
 }
 
 .slide-bottom-start {
     transform: translateY(300px);
     opacity: 0;
-    transition: transform 2s ease, opacity 1s ease; 
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
 }
 
 .slide-left-start {
     transform: translateX(-50px);
     opacity: 0;
-    transition: transform 2s ease, opacity 1s ease; 
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
 } 
 
 .slide-right {
     transform: translateX(30px);
     opacity: 0;
-    transition: transform 2s ease, opacity 1s ease; 
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
 }
 
 .slide-left {
     transform: translateX(-30px);
     opacity: 0;
-    transition: transform 2s ease, opacity 1s ease; 
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
 }
 
 @media (max-width: 768px) {
