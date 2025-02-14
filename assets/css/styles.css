@@ -4,7 +4,7 @@
     --light-gray-color: #7a8897;
     --blue-dark-color: #1E90FF;
     --gap: 3rem;
-    --background-img-one: url('../img/background-white.jpg');
+    --background-img-one: url('../img/background-dark.jpg');
     --secondary-gray-color: #7a8897;
 }
 
@@ -14,11 +14,19 @@
     --light-gray-color: #302c4d;
     --blue-dark-color: #13069f;
     --gap: 3rem;
-    --background-img-one: url('../img/background-dark.png');
+    --background-img-one: url('../img/background-white.png');
 }
 
 .theme-button-light{
     width: 30px;
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .theme-button-light{
+        width: 30px;
+        margin-left: 0px;
+    }
 }
 
 .theme-button-dark{
@@ -26,7 +34,7 @@
 }
 
 .button-dark .theme-button-light{
-    width: 0;
+    display: none;
 }
 
 .button-dark .theme-button-dark{
@@ -218,13 +226,13 @@ h3 {
 } 
 
 .slide-right {
-    transform: translateX(50px);
+    transform: translateX(30px);
     opacity: 0;
     transition: transform 2s ease, opacity 1s ease; 
 }
 
 .slide-left {
-    transform: translateX(-50px);
+    transform: translateX(-30px);
     opacity: 0;
     transition: transform 2s ease, opacity 1s ease; 
 }
@@ -288,7 +296,7 @@ h3 {
 }
 
 .section-one article {
-    max-width: 55%;
+    min-width: 45%;
 }
 
 .section-one article h1 {
@@ -303,8 +311,20 @@ h3 {
 }
 
 .section-one .main-img {
-    min-width: 50px;
+    width: 55%;
     height: auto;
+}
+
+@media (min-width: 1700px) {
+    .section-one article {
+        width: 50%;
+    }
+    .section-one .main-img {
+        width: 60%;
+    }
+    .content {
+        width: 1400px;
+    }
 }
 
 .section-one-button {
@@ -351,7 +371,7 @@ h3 {
 
 .container-one {
     background-image: var(--background-img-one);
-    background-size: contain;
+    background-size: cover;
 }
 
 @media (max-width: 768px) {
@@ -531,6 +551,10 @@ h3 {
     max-width: 50%;
 }
 
+.section-four article {
+    min-width: 30%;
+    width: 40%;
+}
 @media (max-width: 768px) {
     .section-four {
         padding-bottom: 20px
@@ -541,5 +565,9 @@ h3 {
     .section-five {
         display: flex;
         flex-direction: column;
+    }
+    .section-four article {
+        min-width: 100%;
+        width: 100%;
     }
 }
