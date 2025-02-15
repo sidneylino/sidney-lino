@@ -17,6 +17,10 @@
     --background-img-one: url('../img/background-white.png');
 }
 
+.theme {
+    cursor: pointer;
+}
+
 .theme-button-light{
     width: 30px;
     margin-left: 5px;
@@ -102,7 +106,7 @@ h3 {
     list-style: none;
     gap: 70px;
     box-shadow: 1px 1px 4px var(--black-color);
-    z-index: 1;
+    z-index: 2;
     opacity: 0.8;
 }
 
