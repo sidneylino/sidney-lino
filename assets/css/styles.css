@@ -482,7 +482,9 @@ h3 {
     }
 }
 
-
+.project-img-spotify {
+    width: 20%;
+}
 
 .title-project {
     text-align: center;
@@ -565,6 +567,9 @@ h3 {
     }
     .section-four img {
         max-width: 100%;
+    }
+    .project-img-spotify{
+        width: 50%;
     }
     .section-five {
         display: flex;
